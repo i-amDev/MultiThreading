@@ -1,9 +1,9 @@
 package sleepMethod;
 
-public class sleep {
+public class Sleep extends Thread{
 
-    public static void main(String[] args) {
-
+    @Override
+    public void run() {
         for (int i = 1; i <= 5; i++) {
             try {
                 Thread.sleep(1000);
@@ -13,5 +13,12 @@ public class sleep {
             }
             System.out.println(i);
         }
+    }
+
+    public static void main(String[] args) {
+
+        Sleep thread = new Sleep();
+        thread.start();
+
     }
 }

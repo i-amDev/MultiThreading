@@ -3,7 +3,7 @@ package synchronization;
 class BookSeat {
     private int totalSeats = 10;
 
-    public void bookSeats(int seats) {
+    public synchronized void bookSeats(int seats) {
         if (seats <= totalSeats) {
             System.out.println("Seat booked successfully");
             totalSeats -= seats;

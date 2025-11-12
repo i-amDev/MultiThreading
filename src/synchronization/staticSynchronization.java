@@ -1,21 +1,19 @@
 package synchronization;
 
 class BookTheatreSeat {
-    private int totalSeats = 20;
+    private static int totalSeats = 20;
 
-    public synchronized void bookSeats(int seats) {
-
-        synchronized (this) {
-            if (seats <= totalSeats) {
-                System.out.println(seats + " seats booked successfully");
-                totalSeats -= seats;
-                System.out.println(totalSeats + " seats remaining");
-            }
-            else {
-                System.out.println("Seat can't be booked");
-                System.out.println("Available seats : " + totalSeats);
-            }
+    public static synchronized void bookSeats(int seats) {
+        if (seats <= totalSeats) {
+            System.out.println(seats + " seats booked successfully");
+            totalSeats -= seats;
+            System.out.println(totalSeats + " seats remaining");
         }
+        else {
+            System.out.println(seats + " seats can't be booked");
+            System.out.println("Available seats : " + totalSeats);
+        }
+
     }
 }
 

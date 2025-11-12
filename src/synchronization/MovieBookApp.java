@@ -3,16 +3,28 @@ package synchronization;
 class BookSeat {
     private int totalSeats = 10;
 
-    public synchronized void bookSeats(int seats) {
-        if (seats <= totalSeats) {
-            System.out.println("Seat booked successfully");
-            totalSeats -= seats;
-            System.out.println(totalSeats + " seats remaining");
+    public void bookSeats(int seats) {
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName());
+
+        synchronized (this) {
+            if (seats <= totalSeats) {
+                System.out.println("Seat booked successfully");
+                totalSeats -= seats;
+                System.out.println(totalSeats + " seats remaining");
+            }
+            else {
+                System.out.println("Seat can't be booked");
+                System.out.println("Available seats : " + totalSeats);
+            }
         }
-        else {
-            System.out.println("Seat can't be booked");
-            System.out.println("Available seats : " + totalSeats);
-        }
+
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName());
     }
 }
 

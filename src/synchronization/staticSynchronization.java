@@ -13,7 +13,6 @@ class BookTheatreSeat {
             System.out.println(seats + " seats can't be booked");
             System.out.println("Available seats : " + totalSeats);
         }
-
     }
 }
 

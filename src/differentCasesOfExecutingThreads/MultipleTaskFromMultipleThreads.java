@@ -9,5 +9,6 @@ public class MultipleTaskFromMultipleThreads {
 
         MyThread2 thread2 = new MyThread2();
         thread2.start();
+
     }
 }

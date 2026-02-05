@@ -14,5 +14,6 @@ public class SingleTaskFromMultipleThreads extends Thread{
 
         SingleTaskFromMultipleThreads newThread = new SingleTaskFromMultipleThreads();
         newThread.start();
+
     }
 }

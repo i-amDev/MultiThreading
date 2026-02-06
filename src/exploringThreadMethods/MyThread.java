@@ -16,6 +16,5 @@ public class MyThread extends Thread{
         System.out.println("Hello is executed by thread " + Thread.currentThread().getName());
         System.out.println(Thread.currentThread().isAlive());
         System.out.println(thread.isAlive());
-
     }
 }

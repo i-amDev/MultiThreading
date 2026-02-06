@@ -26,7 +26,6 @@ public class LicenceDemo {
 
         OfficerSign officerSign = new OfficerSign();
         officerSign.start();
-
     }
 }
 

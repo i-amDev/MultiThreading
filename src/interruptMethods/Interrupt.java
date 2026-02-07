@@ -20,5 +20,6 @@ public class Interrupt extends Thread{
         Interrupt thread = new Interrupt();
         thread.start();
         thread.interrupt();
+
     }
 }

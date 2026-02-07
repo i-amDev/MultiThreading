@@ -11,5 +11,6 @@ public class SingleTaskFromSingleThread extends Thread{
 
         SingleTaskFromSingleThread thread = new SingleTaskFromSingleThread();
         thread.start();
+
     }
 }

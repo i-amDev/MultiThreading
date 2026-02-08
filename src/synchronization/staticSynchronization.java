@@ -13,6 +13,7 @@ class BookTheatreSeat {
             System.out.println(seats + " seats can't be booked");
             System.out.println("Available seats : " + totalSeats);
         }
+
     }
 }
 
@@ -29,6 +30,7 @@ class MyThread1 extends Thread {
     public void run() {
         bookTheatreSeat.bookSeats(seats);
     }
+
 }
 
 class MyThread2 extends Thread {
@@ -44,6 +46,7 @@ class MyThread2 extends Thread {
     public void run() {
         bookTheatreSeat.bookSeats(seats);
     }
+
 }
 
 public class staticSynchronization {
@@ -65,5 +68,6 @@ public class staticSynchronization {
 
         MyThread1 thread4 = new MyThread1(obj, 4);
         thread4.start();
+
     }
 }

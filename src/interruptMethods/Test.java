@@ -22,5 +22,6 @@ public class Test extends Thread{
         Test test = new Test();
         test.start();
         test.interrupt();
+
     }
 }

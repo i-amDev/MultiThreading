@@ -25,6 +25,7 @@ class BookSeat {
         System.out.println(Thread.currentThread().getName());
         System.out.println(Thread.currentThread().getName());
         System.out.println(Thread.currentThread().getName());
+
     }
 }
 
@@ -50,5 +51,6 @@ public class MovieBookApp extends Thread{
         MovieBookApp thread2 = new MovieBookApp();
         thread2.seats = 6;
         thread2.start();
+
     }
 }

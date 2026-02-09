@@ -68,6 +68,5 @@ public class staticSynchronization {
 
         MyThread1 thread4 = new MyThread1(obj, 4);
         thread4.start();
-
     }
 }

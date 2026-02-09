@@ -32,5 +32,6 @@ public class MovieBookApp{
             }
             System.out.println("Total earning is : " + earnings.total + " Rs");
         }
+
     }
 }

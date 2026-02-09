@@ -22,5 +22,6 @@ public class SleepMethodWithMultipleThreads extends Thread{
 
         SleepMethodWithMultipleThreads thread2 = new SleepMethodWithMultipleThreads();
         thread2.start();
+
     }
 }

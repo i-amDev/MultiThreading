@@ -9,6 +9,5 @@ public class Test extends Thread{
 
         Test t = new Test();
         t.start();
-
     }
 }

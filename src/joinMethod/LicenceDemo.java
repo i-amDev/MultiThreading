@@ -24,7 +24,6 @@ public class LicenceDemo {
             throw new RuntimeException(e);
         }
 
-
         OfficerSign officerSign = new OfficerSign();
         officerSign.start();
     }

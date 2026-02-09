@@ -16,5 +16,6 @@ public class Priority extends Thread{
         Priority priority = new Priority();
         priority.setPriority(9);
         priority.start();
+
     }
 }

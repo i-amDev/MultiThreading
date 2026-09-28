@@ -23,7 +23,6 @@ public class LicenceDemo {
         catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
         OfficerSign officerSign = new OfficerSign();
         officerSign.start();
     }
